@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+
+<html lang="pt-br"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Gabriel Silva Santos | Tech Recruiter &amp; Desenvolvedor</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Manrope:wght@600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                "on-tertiary": "#fdf7ff",
+                "secondary-fixed-dim": "#c3d4ff",
+                "tertiary-fixed-dim": "#d0c7e8",
+                "surface-tint": "#545f73",
+                "secondary-fixed": "#d8e2ff",
+                "on-surface": "#2a3439",
+                "on-tertiary-fixed-variant": "#59526e",
+                "secondary": "#005bc4",
+                "surface-dim": "#cfdce3",
+                "surface-bright": "#f7f9fb",
+                "on-secondary-fixed-variant": "#0057bd",
+                "on-primary": "#f6f7ff",
+                "background": "#f7f9fb",
+                "on-primary-fixed": "#354053",
+                "surface-container-lowest": "#ffffff",
+                "surface-container-highest": "#d9e4ea",
+                "on-secondary-container": "#004eaa",
+                "error-container": "#fe8983",
+                "primary-fixed-dim": "#cad5ed",
+                "primary-container": "#d8e3fb",
+                "tertiary": "#625b77",
+                "surface-container-high": "#e1e9ee",
+                "outline-variant": "#a9b4b9",
+                "tertiary-fixed": "#dfd5f7",
+                "inverse-surface": "#0b0f10",
+                "error-dim": "#4e0309",
+                "tertiary-container": "#dfd5f7",
+                "on-tertiary-fixed": "#3c3650",
+                "surface": "#f7f9fb",
+                "on-tertiary-container": "#4f4964",
+                "on-secondary": "#f9f8ff",
+                "on-secondary-fixed": "#003c86",
+                "on-background": "#2a3439",
+                "on-error-container": "#752121",
+                "inverse-primary": "#dae6fe",
+                "tertiary-dim": "#564f6b",
+                "surface-variant": "#d9e4ea",
+                "on-primary-container": "#475266",
+                "outline": "#717c82",
+                "surface-container-low": "#f0f4f7",
+                "inverse-on-surface": "#9a9d9f",
+                "surface-container": "#e8eff3",
+                "error": "#9f403d",
+                "primary-fixed": "#d8e3fb",
+                "on-primary-fixed-variant": "#515c70",
+                "primary-dim": "#485367",
+                "primary": "#545f73",
+                "secondary-container": "#d8e2ff",
+                "on-error": "#fff7f6",
+                "on-surface-variant": "#566166",
+                "secondary-dim": "#004fad"
+            },
+            "borderRadius": {
+                "DEFAULT": "0.125rem",
+                "lg": "0.25rem",
+                "xl": "0.5rem",
+                "full": "0.75rem"
+            },
+            "fontFamily": {
+                "headline": ["Manrope"],
+                "body": ["Inter"],
+                "label": ["Inter"]
+            }
+          },
+        },
+      }
+    </script>
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+      body {
+        font-family: 'Inter', sans-serif;
+        color: #2a3439;
+        background-color: #f7f9fb;
+      }
+      h1, h2, h3 {
+        font-family: 'Manrope', sans-serif;
+      }
+      section {
+        scroll-margin-top: 100px;
+      }
+      @media print {
+        header, footer, .no-print {
+          display: none !important;
+        }
+        main {
+          margin: 0 !important;
+          padding: 0 !important;
+          max-width: 100% !important;
+        }
+      }
+    </style>
+</head>
+<body class="bg-background text-on-surface selection:bg-secondary-fixed-dim">
+<!-- TopAppBar -->
+<header class="bg-slate-50/80 backdrop-blur-md dark:bg-slate-900/80 docked full-width top-0 sticky z-50 border-b border-slate-200/50 dark:border-slate-800/50">
+<div class="flex justify-between items-center px-8 py-4 max-w-5xl mx-auto w-full">
+<div class="text-2xl font-bold tracking-tight text-slate-800 dark:text-slate-100">Gabriel Silva Santos</div>
+<nav class="hidden md:flex items-center gap-6">
+<a class="text-secondary dark:text-blue-400 font-semibold border-b-2 border-secondary dark:border-blue-400 pb-1 hover:text-blue-600 dark:hover:text-blue-300 transition-colors" href="#profile">Perfil</a>
+<a class="text-slate-500 dark:text-slate-400 font-medium hover:text-secondary dark:hover:text-blue-300 transition-colors underline-offset-8" href="#skills">Habilidades</a>
+<a class="text-slate-500 dark:text-slate-400 font-medium hover:text-secondary dark:hover:text-blue-300 transition-colors underline-offset-8" href="#experience">Experiência</a>
+<a class="text-slate-500 dark:text-slate-400 font-medium hover:text-secondary dark:hover:text-blue-300 transition-colors underline-offset-8" href="#education">Formação</a>
+<a class="text-slate-500 dark:text-slate-400 font-medium hover:text-secondary dark:hover:text-blue-300 transition-colors underline-offset-8" href="#certificates">Certificado</a>
+<a class="text-slate-500 dark:text-slate-400 font-medium hover:text-secondary dark:hover:text-blue-300 transition-colors underline-offset-8" href="https://github.com/Gabr34l" target="_blank">Projetos</a>
+</nav>
+<div class="flex items-center gap-4">
+<div class="flex gap-2">
+<a class="text-secondary dark:text-blue-400 material-symbols-outlined p-1 rounded-full hover:bg-secondary/10 transition-colors" href="mailto:gabrielmaam25@gmail.com" title="Enviar Email">mail</a>
+<a class="text-secondary dark:text-blue-400 material-symbols-outlined p-1 rounded-full hover:bg-secondary/10 transition-colors" href="https://linkedin.com/in/gabriel-silva-santos-9833952b2/" target="_blank" title="LinkedIn">link</a>
+</div>
+<button onclick="window.print()" class="bg-secondary text-white px-4 py-2 rounded-lg font-medium text-sm shadow-sm hover:opacity-90 hover:scale-105 active:scale-95 transition-all">Baixar PDF</button>
+</div>
+</div>
+</header>
+<main class="max-w-5xl mx-auto px-8 py-12 space-y-20">
+<!-- Hero / Summary Section -->
+<section class="relative" id="profile">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
+<div class="md:col-span-8">
+<h1 class="text-5xl font-extrabold tracking-tight text-on-surface mb-4 leading-tight">
+                        Desenvolvedor &amp; <span class="text-secondary">Analista de Sistemas</span>
+</h1>
+<p class="text-xl text-on-surface-variant leading-relaxed max-w-2xl font-body">
+                        Transitando para o setor tecnológico com sólida experiência administrativa. Focado em construir sistemas escaláveis através de código limpo e gestão minuciosa de processos. Entusiasta de Java, Python e do ecossistema web moderno.
+                    </p>
+<div class="mt-8 flex flex-wrap gap-4 text-sm font-medium text-on-surface-variant">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-secondary text-lg">location_on</span> Uberlândia, MG</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-secondary text-lg">call</span> (34) 9-9769-6613</span>
+<a href="https://github.com/Gabr34l" target="_blank" class="flex items-center gap-1 hover:text-secondary transition-colors"><span class="material-symbols-outlined text-secondary text-lg">code</span> GitHub/Gabr34l</a>
+</div>
+</div>
+<div class="md:col-span-4 flex justify-center">
+<div class="w-48 h-48 rounded-2xl overflow-hidden bg-surface-container shadow-xl">
+<img alt="Foto Profissional" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/ADBb0uh6oFHDjCb5de3AmkDUXQIX4CgDpDWSJ_kwKOf2e19T-7VObIox8vmUj0m0_oh1lOQ6Xpr9gTWOo7tejeZMI-QSUlpmJMvvXNCqx4XZd6VwwVKtw1nnqrhocXwdJahEsiTiR2bhbpAOLOD6wU22flBeyCl-e1011S_GXOdtEjyiprAJrxTomVWFUWPSv9Rmh6A2BHNEB4p8bYA0SJhX3PUqvlhtmH7sIz0VwnFzvzzkB02AH8NMDZ-ThpukK5hvbPH7jDdqY8TQggk"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Education Section (Architectural Ledger Highlight) -->
+<section id="education">
+<div class="flex items-baseline gap-4 mb-8">
+<h2 class="text-2xl font-bold tracking-tight text-on-surface">Formando</h2>
+<div class="h-[2px] flex-grow bg-surface-container-high rounded-full"></div>
+</div>
+<div class="bg-surface-container-low p-8 rounded-xl border-l-4 border-secondary">
+<div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-2">
+<h3 class="text-xl font-bold text-on-surface">Análise e Desenvolvimento de Sistemas</h3>
+<span class="text-sm font-label text-on-surface-variant uppercase tracking-wider">2024 — 2026/Julho</span>
+</div>
+<p class="text-lg text-secondary font-semibold">UNIPAC Uberlândia</p>
+<p class="mt-4 text-on-surface-variant leading-relaxed font-body">
+                    Focado em arquitetura de software, gerenciamento de banco de dados e metodologias de desenvolvimento full-stack. Desenvolvendo uma base sólida em lógica computacional e engenharia de sistemas.
+                </p>
+</div>
+</section>
+<!-- Technical Skills (Bento Grid) -->
+<section id="skills">
+<div class="flex items-baseline gap-4 mb-8">
+<h2 class="text-2xl font-bold tracking-tight text-on-surface">Habilidades Técnicas</h2>
+<div class="h-[2px] flex-grow bg-surface-container-high rounded-full"></div>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+<!-- Languages -->
+<div class="bg-surface-container-lowest p-6 rounded-xl shadow-sm border border-outline-variant/10">
+<h4 class="text-xs uppercase tracking-widest text-on-surface-variant font-bold mb-4">Linguagens</h4>
+<div class="flex flex-wrap gap-2">
+<span class="px-3 py-1 bg-secondary-container text-on-secondary-container rounded-full text-xs font-semibold">Java</span>
+<span class="px-3 py-1 bg-secondary-container text-on-secondary-container rounded-full text-xs font-semibold">Python</span>
+<span class="px-3 py-1 bg-secondary-container text-on-secondary-container rounded-full text-xs font-semibold">JavaScript</span>
+<span class="px-3 py-1 bg-secondary-container text-on-secondary-container rounded-full text-xs font-semibold">PHP</span>
+<span class="px-3 py-1 bg-secondary-container text-on-secondary-container rounded-full text-xs font-semibold">C</span>
+</div>
+</div>
+<!-- Frameworks -->
+<div class="bg-surface-container-lowest p-6 rounded-xl shadow-sm border border-outline-variant/10">
+<h4 class="text-xs uppercase tracking-widest text-on-surface-variant font-bold mb-4">Frameworks</h4>
+<div class="flex flex-wrap gap-2">
+<span class="px-3 py-1 bg-primary-container text-on-primary-container rounded-full text-xs font-semibold">Spring Boot</span>
+<span class="px-3 py-1 bg-primary-container text-on-primary-container rounded-full text-xs font-semibold">React Native</span>
+<span class="px-3 py-1 bg-primary-container text-on-primary-container rounded-full text-xs font-semibold">Bootstrap</span>
+</div>
+</div>
+<!-- Database & Tools -->
+<div class="bg-surface-container-lowest p-6 rounded-xl shadow-sm border border-outline-variant/10">
+<h4 class="text-xs uppercase tracking-widest text-on-surface-variant font-bold mb-4">Armazenamento &amp; API</h4>
+<div class="flex flex-wrap gap-2">
+<span class="px-3 py-1 bg-tertiary-container text-on-tertiary-container rounded-full text-xs font-semibold">MySQL</span>
+<span class="px-3 py-1 bg-tertiary-container text-on-tertiary-container rounded-full text-xs font-semibold">MongoDB</span>
+<span class="px-3 py-1 bg-tertiary-container text-on-tertiary-container rounded-full text-xs font-semibold">Postman</span>
+<span class="px-3 py-1 bg-tertiary-container text-on-tertiary-container rounded-full text-xs font-semibold">Docker</span>
+</div>
+</div>
+<!-- Dev Environment -->
+<div class="bg-surface-container-lowest p-6 rounded-xl shadow-sm border border-outline-variant/10">
+<h4 class="text-xs uppercase tracking-widest text-on-surface-variant font-bold mb-4">Fluxo de Trabalho</h4>
+<div class="flex flex-wrap gap-2">
+<span class="px-3 py-1 bg-surface-container-high text-on-surface rounded-full text-xs font-semibold">Git/GitHub</span>
+<span class="px-3 py-1 bg-surface-container-high text-on-surface rounded-full text-xs font-semibold">VS Code</span>
+<span class="px-3 py-1 bg-surface-container-high text-on-surface rounded-full text-xs font-semibold">IntelliJ</span>
+<span class="px-3 py-1 bg-surface-container-high text-on-surface rounded-full text-xs font-semibold">Android Studio</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Certificates Section -->
+<section id="certificates">
+<div class="flex items-baseline gap-4 mb-8">
+<h2 class="text-2xl font-bold tracking-tight text-on-surface">Certificados</h2>
+<div class="h-[2px] flex-grow bg-surface-container-high rounded-full"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<a href="CERTIFICADO UDEMY 8HRS - BD.pdf" target="_blank" class="group bg-surface-container-low p-6 rounded-xl border border-outline-variant/10 hover:border-secondary/50 transition-all flex items-center justify-between no-print">
+<div class="flex items-center gap-4">
+<div class="p-3 bg-secondary/10 text-secondary rounded-lg group-hover:bg-secondary group-hover:text-white transition-colors">
+<span class="material-symbols-outlined">card_membership</span>
+</div>
+<div>
+<h3 class="font-bold text-on-surface">Banco de Dados - Udemy</h3>
+<p class="text-sm text-on-surface-variant">8 Horas de Especialização</p>
+</div>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant group-hover:text-secondary translate-x-0 group-hover:translate-x-1 transition-all">open_in_new</span>
+</a>
+</div>
+</section>
+<!-- Professional Experience -->
+<section id="experience">
+<div class="flex items-baseline gap-4 mb-8">
+<h2 class="text-2xl font-bold tracking-tight text-on-surface">Experiência</h2>
+<div class="h-[2px] flex-grow bg-surface-container-high rounded-full"></div>
+</div>
+<div class="space-y-12">
+<!-- Role 1 -->
+<div class="relative pl-8">
+<div class="absolute left-0 top-0 bottom-0 w-1 bg-surface-variant rounded-full"></div>
+<div class="absolute left-[-4px] top-2 w-3 h-3 bg-secondary rounded-full"></div>
+<div class="flex flex-col md:flex-row justify-between items-start mb-2">
+<div>
+<h3 class="text-xl font-bold text-on-surface">Auxiliar de Escritório</h3>
+<p class="text-secondary font-medium">Rádio Central do Triângulo Mineiro LTDA</p>
+</div>
+<span class="text-sm font-label text-on-surface-variant bg-surface-container-high px-3 py-1 rounded-full uppercase tracking-wider">2023 — ATUAL</span>
+</div>
+<ul class="mt-4 space-y-3 text-on-surface-variant leading-relaxed font-body list-none">
+<li class="flex gap-3">
+<span class="material-symbols-outlined text-secondary text-sm mt-1">check_circle</span>
+<span>Gestão de processos administrativos complexos, otimizando os fluxos organizacionais da equipe de transmissão.</span>
+</li>
+<li class="flex gap-3">
+<span class="material-symbols-outlined text-secondary text-sm mt-1">check_circle</span>
+<span>Manutenção de rigorosos padrões de documentação e gerenciamento de processos utilizando o pacote Microsoft Office.</span>
+</li>
+<li class="flex gap-3">
+<span class="material-symbols-outlined text-secondary text-sm mt-1">check_circle</span>
+<span>Coordenação de comunicações internas, demonstrando forte senso de propriedade profissional e confiabilidade.</span>
+</li>
+</ul>
+</div>
+</div>
+</section>
+<!-- Projects / Highlights (Tonal Cards) -->
+<section id="projects">
+<div class="flex items-baseline gap-4 mb-8">
+<h2 class="text-2xl font-bold tracking-tight text-on-surface">Destaques Técnicos</h2>
+<div class="h-[2px] flex-grow bg-surface-container-high rounded-full"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="bg-surface-container-low p-6 rounded-xl hover:bg-surface-container transition-colors duration-300">
+<div class="flex items-center gap-3 mb-4">
+<div class="p-2 bg-secondary/10 text-secondary rounded-lg">
+<span class="material-symbols-outlined">database</span>
+</div>
+<h3 class="font-bold text-lg text-on-surface">Arquitetura de Banco de Dados</h3>
+</div>
+<p class="text-on-surface-variant text-sm leading-relaxed mb-4">
+                        Proficiente no design de esquemas relacionais normalizados com MySQL e manipulação de dados não estruturados usando MongoDB para backends escaláveis.
+                    </p>
+<div class="flex gap-2">
+<span class="text-[10px] font-bold uppercase tracking-tighter text-secondary">SQL</span>
+<span class="text-[10px] font-bold uppercase tracking-tighter text-secondary">NoSQL</span>
+</div>
+</div>
+<div class="bg-surface-container-low p-6 rounded-xl hover:bg-surface-container transition-colors duration-300">
+<div class="flex items-center gap-3 mb-4">
+<div class="p-2 bg-secondary/10 text-secondary rounded-lg">
+<span class="material-symbols-outlined">developer_mode</span>
+</div>
+<h3 class="font-bold text-lg text-on-surface">Capacidade Full-Stack</h3>
+</div>
+<p class="text-on-surface-variant text-sm leading-relaxed mb-4">
+                        Conexão entre lógica administrativa e soluções de software utilizando backends Java Spring Boot e interfaces móveis React Native.
+                    </p>
+<div class="flex gap-2">
+<span class="text-[10px] font-bold uppercase tracking-tighter text-secondary">Back-End</span>
+<span class="text-[10px] font-bold uppercase tracking-tighter text-secondary">Mobile</span>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-slate-100 dark:bg-slate-950 full-width py-12 mt-20 border-t border-slate-200/10">
+<div class="flex flex-col items-center gap-4 w-full">
+<div class="text-lg font-bold text-slate-700 dark:text-slate-300">Gabriel Silva Santos</div>
+<div class="flex gap-8">
+<a class="text-slate-500 dark:text-slate-400 font-medium text-xs uppercase tracking-wider hover:underline decoration-blue-500 underline-offset-4" href="https://linkedin.com/in/gabriel-silva-santos-9833952b2/">LinkedIn</a>
+<a class="text-slate-500 dark:text-slate-400 font-medium text-xs uppercase tracking-wider hover:underline decoration-blue-500 underline-offset-4" href="https://github.com/Gabr34l">GitHub</a>
+<a class="text-slate-500 dark:text-slate-400 font-medium text-xs uppercase tracking-wider hover:underline decoration-blue-500 underline-offset-4" href="#">Portfólio</a>
+</div>
+<p class="text-slate-500 dark:text-slate-400 text-xs mt-4">© 2024 Gabriel Silva Santos • Tech Recruiter &amp; Desenvolvedor</p>
+</div>
+</footer>
+    <script>
+      // Active link on scroll
+      const sections = document.querySelectorAll('section');
+      const navLinks = document.querySelectorAll('nav a');
+
+      window.addEventListener('scroll', () => {
+        let current = '';
+        sections.forEach(section => {
+          const sectionTop = section.offsetTop;
+          const sectionHeight = section.clientHeight;
+          if (pageYOffset >= (sectionTop - 150)) {
+            current = section.getAttribute('id');
+          }
+        });
+
+        navLinks.forEach(link => {
+          link.classList.remove('text-secondary', 'border-b-2', 'border-secondary', 'font-semibold');
+          link.classList.add('text-slate-500', 'font-medium');
+          if (link.getAttribute('href').includes(current)) {
+            link.classList.add('text-secondary', 'border-b-2', 'border-secondary', 'font-semibold');
+            link.classList.remove('text-slate-500', 'font-medium');
+          }
+        });
+      });
+    </script>
+</body></html>
