@@ -124,9 +124,10 @@
 <a class="text-slate-500 dark:text-slate-400 font-medium hover:text-secondary dark:hover:text-blue-300 transition-colors underline-offset-8" href="https://github.com/Gabr34l" target="_blank">Projetos</a>
 </nav>
 <div class="flex items-center gap-4">
-<div class="flex gap-2">
+<div class="flex gap-2 items-center">
 <a class="text-secondary dark:text-blue-400 material-symbols-outlined p-1 rounded-full hover:bg-secondary/10 transition-colors" href="mailto:gabrielmaam25@gmail.com" title="Enviar Email">mail</a>
 <a class="text-secondary dark:text-blue-400 material-symbols-outlined p-1 rounded-full hover:bg-secondary/10 transition-colors" href="https://linkedin.com/in/gabriel-silva-santos-9833952b2/" target="_blank" title="LinkedIn">link</a>
+<button id="copyLinkBtn" onclick="copyToClipboard()" class="text-secondary dark:text-blue-400 material-symbols-outlined p-1 rounded-full hover:bg-secondary/10 transition-colors" title="Copiar Link do Currículo">content_copy</button>
 </div>
 <button onclick="window.print()" class="bg-secondary text-white px-4 py-2 rounded-lg font-medium text-sm shadow-sm hover:opacity-90 hover:scale-105 active:scale-95 transition-all">Baixar PDF</button>
 </div>
@@ -144,8 +145,8 @@
                         Transitando para o setor tecnológico com sólida experiência administrativa. Focado em construir sistemas escaláveis através de código limpo e gestão minuciosa de processos. Entusiasta de Java, Python e do ecossistema web moderno.
                     </p>
 <div class="mt-8 flex flex-wrap gap-4 text-sm font-medium text-on-surface-variant">
-<span class="flex items-center gap-1"><span class="material-symbols-outlined text-secondary text-lg">location_on</span> Uberlândia, MG</span>
-<span class="flex items-center gap-1"><span class="material-symbols-outlined text-secondary text-lg">call</span> (34) 9-9769-6613</span>
+<a href="https://www.google.com/maps/place/Monte+Alegre+de+Minas,+MG,+38475-000/@-18.8704946,-48.8902749,2858m/data=!3m2!1e3!4b1!4m6!3m5!1s0x94a3ee205c43f08d:0x66de71d36285b406!8m2!3d-18.8705155!4d-48.8799751!16s%2Fg%2F11bxg0l5v9?entry=ttu&g_ep=EgoyMDI2MDQwNS4wIKXMDSoASAFQAw%3D%3D" target="_blank" class="flex items-center gap-1 hover:text-secondary transition-colors"><span class="material-symbols-outlined text-secondary text-lg">location_on</span> Uberlândia, MG</a>
+<a href="https://wa.me/5534997696613?text=Ol%C3%A1%20Gabriel%2C%20tudo%20bem%3F" target="_blank" class="flex items-center gap-1 hover:text-secondary transition-colors"><span class="material-symbols-outlined text-secondary text-lg">call</span> (34) 9-9769-6613</a>
 <a href="https://github.com/Gabr34l" target="_blank" class="flex items-center gap-1 hover:text-secondary transition-colors"><span class="material-symbols-outlined text-secondary text-lg">code</span> GitHub/Gabr34l</a>
 </div>
 </div>
@@ -235,8 +236,12 @@
 <span class="material-symbols-outlined">card_membership</span>
 </div>
 <div>
-<h3 class="font-bold text-on-surface">Banco de Dados - Udemy</h3>
-<p class="text-sm text-on-surface-variant">8 Horas de Especialização</p>
+<h3 class="font-bold text-on-surface text-lg">Banco de Dados SQL do Zero ao Avançado + Projetos Reais</h3>
+<p class="text-sm text-on-surface-variant font-medium">Instrutor: Andre Iacono | Udemy</p>
+<div class="flex gap-4 mt-2 text-[10px] font-bold text-secondary uppercase tracking-widest">
+<span>Data: 20 de Março de 2026</span>
+<span>Duração: 8h no total</span>
+</div>
 </div>
 </div>
 <span class="material-symbols-outlined text-on-surface-variant group-hover:text-secondary translate-x-0 group-hover:translate-x-1 transition-all">open_in_new</span>
@@ -257,7 +262,7 @@
 <div class="flex flex-col md:flex-row justify-between items-start mb-2">
 <div>
 <h3 class="text-xl font-bold text-on-surface">Auxiliar de Escritório</h3>
-<p class="text-secondary font-medium">Rádio Central do Triângulo Mineiro LTDA</p>
+<p class="text-secondary font-medium hover:underline"><a href="https://www.google.com/search?sourceid=chrome&nseg=radio+central+do+triangulo+mineiro+ltda&q=radio+central+do+triangulo+mineiro+ltda" target="_blank">Rádio Central do Triângulo Mineiro LTDA</a></p>
 </div>
 <span class="text-sm font-label text-on-surface-variant bg-surface-container-high px-3 py-1 rounded-full uppercase tracking-wider">2023 — ATUAL</span>
 </div>
@@ -331,6 +336,21 @@
 </div>
 </footer>
     <script>
+      // Copy Link Functionality
+      function copyToClipboard() {
+          const url = 'https://gabr34l.github.io/curriculo-atualizado/#profile';
+          navigator.clipboard.writeText(url).then(() => {
+              const btn = document.getElementById('copyLinkBtn');
+              const originalIcon = btn.innerText;
+              btn.innerText = 'check';
+              btn.classList.add('text-green-500');
+              setTimeout(() => {
+                  btn.innerText = originalIcon;
+                  btn.classList.remove('text-green-500');
+              }, 2000);
+          });
+      }
+
       // Active link on scroll
       const sections = document.querySelectorAll('section');
       const navLinks = document.querySelectorAll('nav a');
